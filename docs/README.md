@@ -1,0 +1,79 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer Example</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        /* Main Content Styles */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        
+        /* Button Styles */
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            main {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Full-Stack Developer Example</h1>
+    </header>
+    <main>
+        <h2>Welcome to the Full-Stack Developer Example</h2>
+        <button id="start-button">Start</button>
+        <div id="output"></div>
+    </main>
+    <script>
+        // Get the start button and output div elements
+        const startButton = document.getElementById('start-button');
+        const outputDiv = document.getElementById('output');
+        
+        // Add an event listener to the start button
+        startButton.addEventListener('click', () => {
+            // Generate a random number between 1 and 100
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            
+            // Display the random number in the output div
+            outputDiv.innerText = `Random Number: ${randomNumber}`;
+        });
+    </script>
+</body>
+</html>
+```
